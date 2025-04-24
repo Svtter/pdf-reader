@@ -17,6 +17,12 @@ Copy `.env.example` to `.env`.
 
 Config the environment varibles.
 
+Run the `main.py`.
+
+```python
+uv run main.py
+```
+
 ## Reference
 
 If you use this code repository or find it helpful, please cite my work.
