@@ -13,9 +13,9 @@ A application to read data from pdf file to excel file, based on openai compatib
 
 ## Usage
 
-Copy `.env.example` to `.env`.
+复制 `.env.example` 文件到 `.env`。
 
-Config the environment varibles.
+配置环境变量。
 
 ## Reference
 
