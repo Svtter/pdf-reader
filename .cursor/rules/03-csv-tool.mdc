@@ -1,0 +1,37 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# CSV 工具使用指南
+
+[csvtool.py](mdc:pdf_reader/csvtool.py) 是用于从文本中提取和处理 CSV 数据的工具模块。
+
+## 主要功能
+
+1. 使用 LLM 从文本中识别和提取 CSV 数据
+2. 支持多个 CSV 数据的提取和保存
+3. 提供正则表达式作为备选提取方案
+
+## 使用方法
+
+```python
+from pdf_reader.csvtool import CsvTool
+from openai import OpenAI
+
+client = OpenAI()
+csv_tool = CsvTool(client, output_dir="output")
+files = csv_tool.extract_csv(text)
+```
+
+## 数据处理流程
+
+1. 首先使用 LLM 模型尝试提取 CSV 数据
+2. 如果 LLM 提取失败，使用正则表达式作为备选方案
+3. 将提取的数据保存为独立的 CSV 文件
+
+## 注意事项
+
+1. 确保提供正确的 OpenAI/Moonshot API 配置
+2. 检查输出目录是否具有写入权限
+3. 处理大量数据时注意内存使用

@@ -1,0 +1,61 @@
+当然，以下是根据您提供的PDF内容生成的多个CSV表头：
+
+### 1. 数据基本信息（表1）
+```csv
+序号,大致分类,元素名称,英文,定义,示例,属性
+1,数据基本信息,数据标题,Title,数据的中英文标题,"Wear behaviour of CFR PEEK articulated against CoCr under varying contact stresses",必填
+2,数据基本信息,数字标识,DOI,数据的标识信息,10.1016/j.jmbbm.2019.05.022,选填
+3,数据基本信息,关键词,Key words,数据所涉及的制备工艺、检测手段等词语,"Wear, In-vitro testing, Carbon fibre reinforced polyether ether ketone, Artificial joints",必填
+4,数据基本信息,数据摘要,abstract,具体描述整个数据内容的摘要,"Total hip replacement with metal-on-polymer hip prostheses is the most common treatment for late-stage osteoarthritis. However, the wear debris generated from the polymer acetabular liner remains a problem. Alternative materials with claimed superior wear properties have been proposed to overcome this problem.",必填
+5,数据基本信息,来源,source,计算/实验/生产,实验,必填
+6,数据基本信息,引用,reference,如果来源选的摘录，则必须写上对数据参考的文件,文献[Göksu Kandemir∗, Simon Smith, Thomas J. Joyce],选填
+7,数据基本信息,是否公开,Public or not,指数据共享的范围，是公开还是非公开,公开,必填
+8,数据基本信息,数据创建日期,Submission date,数据的创建日期,2019-05-14,必填
+9,数据基本信息,数据上次修改日期,Update date,数据的上次修改日期,2024-05-20,选填
+10,数据基本信息,项目名称,Project name,支持数据产生和加工的项目名称,Hip Replacement Materials Research,选填
+11,数据基本信息,项目编号,Project number,支持数据产生和加工的项目立项编号,HRM-2019,选填
+12,数据基本信息,项目负责人,Project manager,该数据所在项目的项目负责人,Göksu Kandemir,选填
+13,数据基本信息,指南,Guide book,该项目所在指南名称,Material Testing Guidelines,选填
+14,数据基本信息,课题编号,课题编号,支持数据产生和加工的课题立项编号,HRM-课题1,选填
+15,数据基本信息,课题名称,课题名称,支持数据产生和加工的课题名称,CFR PEEK Wear Behavior Study,选填
+16,数据基本信息,课题负责人,课题负责人,该数据所在课题的课题负责人,Thomas J. Joyce,选填
+17,数据基本信息,数据负责单位,数据负责单位,数据提供单位的联系信息,Newcastle University,必填
+18,数据基本信息,数据提供者,数据提供者,提供数据资源的机构或人员,School of Engineering, Newcastle University,必填
+19,数据基本信息,数据提供者联系方式,数据提供者联系方式,提供数据资源的机构或人员联系方式,+44 (0)191 208 6000,必填
+20,数据基本信息,数据贡献者,数据贡献者,对数据内容创建做出贡献的个人或组织的名称,Simon Smith,必填
+21,数据基本信息,数据审核者姓名,数据审核者姓名,对数据进行审核的人员姓名,Thomas J. Joyce,必填
+22,数据基本信息,数据审核者单位,数据审核者单位,对数据进行审核的人员的单位,Newcastle University,必填
+23,数据基本信息,数据审核者联系方式,数据审核者联系方式,对数据进行审核的人员的联系方式,G.Kandemir2@ncl.ac.uk,必填
+```
+
+### 2. 人工关节材料数据集概览信息（表2）
+```csv
+材料数据编号,应用部位,材料基本信息,结构设计数据,性能数据,实验数据,临床数据
+M001,髋关节,见材料基本信息表,见结构设计数据表,见性能数据表,见实验数据表,见临床数据表
+```
+
+### 3. 球头基本信息（表5.1）
+```csv
+材料类别,成分组成,加工工艺,表面处理,物理性能,微观组织
+CoCr,Co: 27.4%, Cr: 5.7%, Mo: 0.17%, Fe: Bal., Ni: 0.1%,锻造,喷砂,硬度: 300 HV, 晶粒大小: 50 μm, 晶粒取向: 随机取向
+```
+
+### 4. 内衬基本信息（表5.3）
+```csv
+材料类别,分子量,结晶度,改性填料,加工工艺,表面处理,物理性能
+CFR PEEK,N/A,N/A,碳纤维,注塑成型,喷砂,硬度: 298 MPa
+```
+
+### 5. 结构设计数据（表5.4）
+```csv
+球头直径,球头形式,球头形状,球头纹理,内衬厚度,内衬偏移,内衬锁定机制,径向间隙,球面度偏差,锥度,锥颈尺寸,颈长,锥套设计,锥颈界面纹理,锥颈界面间隙,股骨柄前倾角,股骨柄颈干角,股骨柄偏心距,股骨柄孔隙率,股骨柄拓扑结构,股骨柄冠状面,股骨柄矢状面,股骨柄横截面,柄体第一长度,柄体第二长度
+N/A,Single action,Spherical,同心圆,N/A,N/A,锁定机制,N/A,N/A,N/A,N/A,N/A,设计1,纹理1,0 °,N/A,N/A,N/A,N/A,结构1,矩形,矩形,矩形,N/A,N/A
+```
+
+### 6. 体外实验数据（表6.1）
+```csv
+测试设备,摩擦测试条件,负载,滑动距离,润滑液类型,蛋白质浓度,测试周期,测试温度,测试时间,总重量损失
+SuperCTPOD pin-on-disc machine,椭圆轨道运动,70.7 N,34.62 mm,稀释的新生牛血清,22 g/L,2.5 百万次循环,N/A,100 h,3.12 mg
+```
+
+请注意，这些CSV表头是基于您提供的PDF内容生成的，部分信息如“N/A”表示在PDF中未提供具体数值或细节。

@@ -1,0 +1,27 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# PDF Reader 项目结构
+
+本项目是一个 PDF 阅读和处理工具，主要用于处理 PDF 文件并提取其中的结构化数据。
+
+## 核心目录结构
+
+- [pdf_reader/](mdc:pdf_reader/) - 核心代码目录
+  - [csvtool.py](mdc:pdf_reader/csvtool.py) - CSV 数据提取和处理工具
+- [resources/](mdc:resources/) - 存放提示词等资源文件
+- [tests/](mdc:tests/) - 测试用例目录
+- [docs/](mdc:docs/) - 项目文档
+- [output/](mdc:output/) - 输出文件目录
+- [notebooks/](mdc:notebooks/) - Jupyter notebooks 用于实验和演示
+
+## 配置文件
+
+- [pyproject.toml](mdc:pyproject.toml) - Python 项目配置和依赖管理
+- [docker-compose.yml](mdc:docker-compose.yml) - Docker 环境配置
+
+## 入口文件
+
+- [main.py](mdc:main.py) - 项目主入口文件

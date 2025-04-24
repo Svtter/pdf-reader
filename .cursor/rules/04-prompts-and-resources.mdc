@@ -1,0 +1,30 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 提示词和资源文件指南
+
+项目的提示词和资源文件都存放在 [resources/](mdc:resources) 目录下。
+
+## 提示词文件
+
+- [split-csv.txt](mdc:resources/split-csv.txt) - CSV 数据提取的提示词
+- [table-format.txt](mdc:resources/table-format.txt) - 表格格式化提示词
+- [prompt-init.txt](mdc:resources/prompt-init.txt) - 初始化提示词
+
+## 测试资源
+
+- [test.pdf](mdc:resources/test.pdf) - 测试用 PDF 文件
+- [test.txt](mdc:resources/test.txt) - 测试用文本文件
+
+## 配置文件
+
+- [csv_list.json](mdc:resources/csv_list.json) - CSV 列表配置
+
+## 使用规范
+
+1. 所有提示词文件应使用 `.txt` 后缀
+2. JSON 配置文件应使用 `.json` 后缀
+3. 提示词应包含清晰的注释和使用说明
+4. 测试资源文件应该具有代表性和完整性

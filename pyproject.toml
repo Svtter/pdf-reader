@@ -1,0 +1,41 @@
+[project]
+name = "pdf-reader"
+version = "0.1.0"
+description = "A application to read data from pdf file to excel file, based on openai compatible api."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "boto3>=1.37.35",
+    "jinja2>=3.1.6",
+    "jupyterlab>=4.4.0",
+    "langchain>=0.3.23",
+    "langfuse>=2.60.3",
+    "langsmith>=0.3.32",
+    "llama-cloud-services>=0.6.12",
+    "magic-pdf[full]>=0.6.1",
+    "openai>=1.75.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "pydantic-ai>=0.1.2",
+    "pymongo>=4.12.0",
+    "python-dotenv>=1.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "markdown>=3.8",
+    "modelscope>=1.25.0",
+    "ruff>=0.11.5",
+]
+test = [
+    "pytest>=8.3.5",
+    "pytest-dotenv>=0.5.2",
+]
+
+[tool.ruff]
+indent-width = 2
+line-length = 120
+select = ["E", "W", "F", "B"]
+
+[tool.pytest]
+env_files = [".env"]

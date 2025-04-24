@@ -1,0 +1,43 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 核心模块指南
+
+## 基础模块
+
+- [base.py](mdc:pdf_reader/base.py) - 基础类和工具
+- [utils.py](mdc:pdf_reader/utils.py) - 通用工具函数
+
+## 数据处理模块
+
+- [csvtool.py](mdc:pdf_reader/csvtool.py) - CSV 数据处理
+- [readtable.py](mdc:pdf_reader/readtable.py) - 表格读取
+- [readimgs.py](mdc:pdf_reader/readimgs.py) - 图片处理
+
+## LLM 相关模块
+
+- [llms.py](mdc:pdf_reader/llms.py) - LLM 客户端封装
+- [rag.py](mdc:pdf_reader/rag.py) - RAG 检索增强生成
+
+## 存储和追踪
+
+- [db.py](mdc:pdf_reader/db.py) - 数据库操作
+- [filebucket.py](mdc:pdf_reader/filebucket.py) - 文件存储
+- [tracing.py](mdc:pdf_reader/tracing.py) - 追踪和日志
+
+## 开发规范
+
+1. 每个模块应该有明确的职责
+2. 保持模块之间的低耦合
+3. 使用依赖注入模式
+4. 提供完整的类型注解
+5. 编写单元测试用例
+
+## 模块依赖关系
+
+- base.py 作为基础模块，其他模块可以依赖它
+- utils.py 提供通用工具，可以被所有模块使用
+- 避免循环依赖
+- 使用依赖注入降低模块间耦合

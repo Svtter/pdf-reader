@@ -1,0 +1,30 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# PDF Reader 核心功能
+
+PDF Reader 是一个用于处理 PDF 文件的工具，主要功能包括：
+
+1. PDF 文本提取
+2. 结构化数据识别
+3. CSV 数据提取和处理
+
+## 主要模块
+
+- PDF 处理模块：负责 PDF 文件的读取和文本提取
+- 数据提取模块：使用 LLM 模型进行结构化数据识别
+- CSV 工具模块：[csvtool.py](mdc:pdf_reader/csvtool.py) 处理 CSV 相关的数据提取和保存
+
+## 开发规范
+
+1. 所有新功能必须包含测试用例
+2. 使用 loguru 进行日志记录
+3. 遵循 PEP8 编码规范
+4. 使用类型注解增强代码可读性
+
+## 依赖服务
+
+- OpenAI API 或 Moonshot API 用于 LLM 处理
+- 本地文件系统用于数据存储

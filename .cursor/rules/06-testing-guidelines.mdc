@@ -1,0 +1,54 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 测试指南
+
+## 测试目录结构
+
+所有测试文件都应该放在 [tests/](mdc:tests) 目录下，并遵循以下结构：
+
+```
+tests/
+├── unit/          # 单元测试
+├── integration/   # 集成测试
+└── resources/     # 测试资源文件
+```
+
+## 测试规范
+
+1. 文件命名
+   - 测试文件应以 `test_` 开头
+   - 测试文件名应与被测试模块对应
+   - 例如：`test_csvtool.py` 测试 `csvtool.py`
+
+2. 测试用例编写
+   - 使用 pytest 框架
+   - 每个测试函数应以 `test_` 开头
+   - 使用 fixture 管理测试资源
+   - 提供清晰的测试用例描述
+
+3. 测试覆盖率
+   - 核心功能需要 100% 覆盖
+   - 工具函数至少 80% 覆盖
+   - 使用 pytest-cov 检查覆盖率
+
+4. 最佳实践
+   - 每个测试只测试一个功能点
+   - 使用 mock 处理外部依赖
+   - 保持测试简单和可维护
+   - 编写参数化测试用例
+
+## 运行测试
+
+```bash
+# 运行所有测试
+pytest
+
+# 运行特定测试文件
+pytest tests/unit/test_csvtool.py
+
+# 检查测试覆盖率
+pytest --cov=pdf_reader
+```
