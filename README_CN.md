@@ -1,4 +1,9 @@
-# PDF reader
+# PDF Reader
+
+<p align="center">
+  <a href="./README.md"><img alt="README in English" src="https://img.shields.io/badge/English-d9d9d9"></a>
+  <a href="./README_CN.md"><img alt="简体中文版自述文件" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
+</p>
 
 这是一个基于 openai 类似接口的程序，可以从 pdf 中读取数据
 
