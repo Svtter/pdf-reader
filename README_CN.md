@@ -19,7 +19,7 @@
 
 执行 `main.py`。
 
-```python
+```bash
 uv run main.py
 ```
 

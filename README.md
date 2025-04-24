@@ -19,7 +19,7 @@ Config the environment varibles.
 
 Run the `main.py`.
 
-```python
+```bash
 uv run main.py
 ```
 
